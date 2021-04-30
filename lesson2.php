@@ -16,7 +16,7 @@
 	$i = 0;
 	
 	for ($a = 3; $i < 10; $i++) {
-		echo '<br />tour n°'.($i+1);
+		echo '<br />tour nï¿½'.($i+1);
 		$i++;
 	}
 	
@@ -68,7 +68,7 @@
 	//les tableaux
 	
 	$T = array();
-	$T = array(7, 8, 9); //tableau numéroté
+	$T = array(7, 8, 9); //tableau numï¿½rotï¿½
 	
 	echo '<br /> $T[2] = '.$T[2];
 	
@@ -125,7 +125,7 @@
 		'c' => 'raisin'
 	);
 	
-	// récuperer les valeurs sans clés
+	// rï¿½cuperer les valeurs sans clï¿½s
 	
 	foreach($a as $element) {
 		echo '-> '.$element.'<br />';
@@ -136,7 +136,7 @@
 		echo '=> '.$element.'<br />';
 	}
 	
-	// les valeurs avec clés
+	// les valeurs avec clï¿½s
 	
 	foreach($a as $cle => $element) {
 		echo $cle.' -> '.$element.'<br />';
@@ -153,6 +153,19 @@
 		echo sprintf("AB1%'.03d\n", $i);
 	}
 	
+
+	  $notes = [12,13,16,18];
+      $eleve = [
+        'G1' => ['maryse', 'naomie', 'ruth'],
+         'G2' => ['samy', 'arsene', 'keren']
+     ];
+     foreach ($eleve as $key => $value) {
+        echo "la classe $key". "<br>";
+        foreach ($value as $liste) {
+             echo "- $liste"."<br>";
+        } 
+    	echo "<br>"; 
+    }
 	
 	
 	
